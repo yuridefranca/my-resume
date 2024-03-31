@@ -1,7 +1,13 @@
+import styled from 'styled-components';
+
+const Title = styled.h1`
+	text-align: center;
+`;
+
 function App() {
 	return (
 		<>
-			<h1>Teste</h1>
+			<Title>Hello World</Title>
 		</>
 	);
 }
