@@ -1,0 +1,27 @@
+:root {
+	// background
+	--background-primary-color: 211, 211, 211;
+
+	// text
+	--text-primary-color: 36, 36, 36;
+}
+
+.dark-theme {
+	// background
+	--background-primary-color: 36, 36, 36;
+
+	// text
+	--text-primary-color: 211, 211, 211;
+}
+
+@mixin title {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+@mixin subtitle {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+
