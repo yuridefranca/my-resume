@@ -2,17 +2,19 @@
 	// light mode
 	--background-primary-color--light: 211, 211, 211;
 	--primary-color--light: 36, 36, 36;
+	--primary-button-background--light: to left, #cec4ef, #f5c5cd, #ac8fe3;
 
 	// dark mode
 	--background-primary-color--dark: 36, 36, 36;
 	--primary-color--dark: 211, 211, 211;
+	--primary-button-background--dark: to right, #a287d5, #e4b8bf, #8b6bc5;
 }
 
 @media (prefers-color-scheme: light) {
 	:root {
 		--background-primary-color: var(--background-primary-color--light);
 		--primary-color: var(--primary-color--light);
-
+		--primary-button-background: var(--primary-button-background--light);
 	}
 }
 
@@ -20,16 +22,18 @@
 	:root {
 		--background-primary-color: var(--background-primary-color--dark);
 		--primary-color: var(--primary-color--dark);
-
+		--primary-button-background: var(--primary-button-background--dark);
 	}
 }
 
 [color-scheme='light'] {
 	--background-primary-color: var(--background-primary-color--light);
 	--primary-color: var(--primary-color--light);
+	--primary-button-background: var(--primary-button-background--light);
 }
 
 [color-scheme='dark'] {
 	--background-primary-color: var(--background-primary-color--dark);
 	--primary-color: var(--primary-color--dark);
+	--primary-button-background: var(--primary-button-background--dark);
 }
