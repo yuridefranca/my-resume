@@ -1,27 +1,35 @@
 :root {
-	// background
-	--background-primary-color: 211, 211, 211;
+	// light mode
+	--background-primary-color--light: 211, 211, 211;
+	--primary-color--light: 36, 36, 36;
 
-	// text
-	--text-primary-color: 36, 36, 36;
+	// dark mode
+	--background-primary-color--dark: 36, 36, 36;
+	--primary-color--dark: 211, 211, 211;
 }
 
-.dark-theme {
-	// background
-	--background-primary-color: 36, 36, 36;
+@media (prefers-color-scheme: light) {
+	:root {
+		--background-primary-color: var(--background-primary-color--light);
+		--primary-color: var(--primary-color--light);
 
-	// text
-	--text-primary-color: 211, 211, 211;
+	}
 }
 
-@mixin title {
-  font-size: 2.5rem;
-  font-weight: 700;
+@media (prefers-color-scheme: dark) {
+	:root {
+		--background-primary-color: var(--background-primary-color--dark);
+		--primary-color: var(--primary-color--dark);
+
+	}
 }
 
-@mixin subtitle {
-  font-size: 1.5rem;
-  font-weight: 500;
+[color-scheme='light'] {
+	--background-primary-color: var(--background-primary-color--light);
+	--primary-color: var(--primary-color--light);
 }
 
-
+[color-scheme='dark'] {
+	--background-primary-color: var(--background-primary-color--dark);
+	--primary-color: var(--primary-color--dark);
+}
