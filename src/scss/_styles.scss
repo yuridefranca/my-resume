@@ -1,6 +1,10 @@
 html,
 body {
-	background-color: rgba(var(--background-primary-color), 1);
+	background-color: rgba(var(--primary-background-color), 1);
+}
+
+body * {
+	box-sizing: border-box;
 }
 
 #root {
@@ -10,6 +14,8 @@ body {
 		'aside header header header'
 		'aside main main main'
 		'aside footer footer footer';
+	padding: 2rem 1.5rem;
+	column-gap: 2rem;
 }
 
 header {

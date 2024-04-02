@@ -12,7 +12,12 @@ export const StyledButton = styled.button<{
   border-radius: ${props => props.size === 'small' ? '1.2rem' : '0.7rem'};
   border: ${props => props.outlined === 'true' ? '1px solid rgba(var(--primary-color), 0.5)' : 'none'};
 
-  padding: 0.5rem 1rem;
+  margin: 0 auto;
+  padding:  ${props => props.size === 'large' ? '0.7rem 2rem' : '0.5rem 1rem'};
+  width: fit-content;
 
   cursor: pointer;
+
+  font-size: ${props => props.size === 'large' ? '1.2rem' : '1rem'};
+  font-weight: ${props => props.size === 'large' ? '700' : '500'};
 `;
